@@ -386,7 +386,7 @@ h4 {
   color: var(--lightmode-color);
   border-bottom: 1px solid var(--greytone-color);
 }
-.friendsaccept {
+#friendsaccept {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -398,6 +398,13 @@ h4 {
 }
 .req2 {
   overflow-x: auto;
+}
+
+.friendreq p {
+  font-size: 1.2em;
+}
+.friendreq h5 {
+  font-size: 1.2em;
 }
 .req2 .img {
   display: flex;
@@ -419,9 +426,9 @@ h4 {
   color: var(--lightmode-color);
   border-radius: 20px;
   cursor: pointer;
-  height: 28px;
+  height: 30px;
   font-size: 1em;
-  padding: 4%;
+  padding: 8%;
   display: flex;
   align-items: center;
   border: none;
@@ -434,7 +441,7 @@ h4 {
   cursor: pointer;
   height: 28px;
   font-size: 1em;
-  padding: 4%;
+  padding: 8%;
   display: flex;
   align-items: center;
 }
