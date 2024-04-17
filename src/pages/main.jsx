@@ -24,6 +24,7 @@ export default function Mainp() {
   const userId = state.userId;
   const accessToken = state.accessToken;
   const time = state.timer;
+  const [buttonTexts, setButtonTexts] = useState({});
   const [prof, setprof] = useState(true);
   const [feedm, setfeed] = useState(true);
   const [friendsm, setfriendsm] = useState(true);
@@ -76,7 +77,10 @@ export default function Mainp() {
         }
       );
       settrigger(1);
-      setmsg("Pending");
+      setButtonTexts((prevState) => ({
+        ...prevState,
+        [username]: "Added", // Change this to whatever text you want
+      }));
     } catch (err) {
       console.log(err);
     }
@@ -252,6 +256,7 @@ export default function Mainp() {
         prof={prof}
         friendsm={friendsm}
         feedm={feedm}
+        buttonTexts={buttonTexts}
       />
       {isMobile ? (
         <div className="mobile">

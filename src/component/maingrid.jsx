@@ -22,6 +22,7 @@ export default function Maingrid({
   prof,
   feedm,
   friendsm,
+  buttonTexts,
 }) {
   return (
     <div className="grid">
@@ -79,7 +80,12 @@ export default function Maingrid({
           <Friendre friends={friends} handle={handle} />
           <br />
           <br />
-          <Suggest suggest={suggest} add={add} msg={msg} />
+          <Suggest
+            suggest={suggest}
+            add={add}
+            msg={msg}
+            buttonTexts={buttonTexts}
+          />
         </main>
       ) : null}
     </div>

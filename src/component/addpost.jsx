@@ -6,10 +6,11 @@ import { server, handleFileUpload } from "../utils/axios";
 export default function Addpost({ userId, accessToken, user, refresh }) {
   const [file, setfile] = useState(null);
   const [des, setdes] = useState("");
+  const [load, setload] = useState(false);
 
   const sub = async () => {
     const data = { userId: userId, description: des };
-
+    setload(true);
     try {
       const token = accessToken;
       console.log("file uploaded");
@@ -26,6 +27,8 @@ export default function Addpost({ userId, accessToken, user, refresh }) {
       setdes("");
     } catch (err) {
       console.log(err);
+    } finally {
+      setload(false);
     }
   };
   const handleKeyDown = (e) => {
@@ -80,6 +83,28 @@ export default function Addpost({ userId, accessToken, user, refresh }) {
         </div>
 
         <button onClick={sub}>post</button>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        {load ? (
+          <ul class="wave-menu">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        ) : null}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import "../pages.css";
 import logo from "../../logo_blog.jpeg";
 
-export default function Suggest({ suggest, add, msg }) {
+export default function Suggest({ suggest, add, buttonTexts }) {
   return (
     <div className="suggest">
       <div className="title">
@@ -22,7 +22,7 @@ export default function Suggest({ suggest, add, msg }) {
                 </div>
 
                 <button id="add" onClick={() => add(fr.username)}>
-                  {msg}
+                  {buttonTexts[fr.username] || "Add"}
                 </button>
               </section>
             );

@@ -6,9 +6,11 @@ export default function RegistForm({ success, handleSuccess }) {
   const [username, setuser] = useState("");
   const [password, setpass] = useState("");
   const [email, setemail] = useState("");
+  const [load, setload] = useState(false);
 
   const regist = async (e) => {
     e.preventDefault();
+    setload(true);
     try {
       const res = await server.post("regist", {
         email: email,
@@ -20,6 +22,8 @@ export default function RegistForm({ success, handleSuccess }) {
       handleSuccess(res.data?.message);
     } catch (err) {
       console.log(err);
+    } finally {
+      setload(false);
     }
   };
 
@@ -73,6 +77,28 @@ export default function RegistForm({ success, handleSuccess }) {
           <button type="submit">Regist</button>
         </span>
       </form>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        {load ? (
+          <ul class="wave-menu">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        ) : null}
+      </div>
     </>
   );
 }

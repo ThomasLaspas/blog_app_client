@@ -8,9 +8,11 @@ export default function LoginForm() {
   const [password, setpass] = useState("");
   const [email, setemail] = useState("");
   const [error, seterr] = useState("");
+  const [load, setload] = useState(false);
   const navigate = useNavigate();
   const login = async (e) => {
     e.preventDefault();
+    setload(true);
     try {
       const res = await server.post("login", {
         email: email,
@@ -32,6 +34,8 @@ export default function LoginForm() {
     } catch (err) {
       console.log(err.response.data.message);
       seterr(err.response.data.message);
+    } finally {
+      setload(false);
     }
   };
 
@@ -75,6 +79,29 @@ export default function LoginForm() {
           <button type="submit">Login</button>
         </span>
       </form>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        {load ? (
+          <ul class="wave-menu">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        ) : null}
+      </div>
+
       <h4 style={{ color: "red", textAlign: "center" }}>
         {" "}
         {error ? error : null}
