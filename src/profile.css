@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative:wght@400;700;900&display=swap");
+
+:root {
+  --very-dark-color: #232931;
+  --dark-color: #393e46;
+  --main-color: #4ecca3;
+  --lightmode-color: #eeeeee;
+  --logo-font-family: "Cinzel Decorative", serif;
+  --greytone-color: #8c93a0;
+}
+
+.profilep {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.profilep header {
+  width: 85%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: var(--dark-color);
+}
+.updateprof {
+  width: 85%;
+  min-height: 15vh;
+
+  padding: 1%;
+  background-color: var(--dark-color);
+}
+.image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridprof {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+}
+
+.gridprof .info {
+  display: grid;
+  place-items: center;
+  border: none;
+}
+
+.update {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.update form {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+}
+
+.update form input {
+  border-radius: 20px;
+  height: 35px;
+  background-color: var(--dark-color);
+  border: 1px solid var(--lightmode-color);
+  text-align: center;
+  font-size: 1.3em;
+  width: 100%;
+  color: var(--lightmode-color);
+}
+.subup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subup button {
+  width: 30%;
+  height: 40px;
+  background-color: #4ecca3;
+  color: var(--lightmode-color);
+  margin-top: 2%;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.friends {
+  display: grid;
+  place-items: center;
+}
+.friendsprof {
+  width: 80%;
+  height: 15vh;
+  overflow-x: auto;
+}
+
+.friendsprof section {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.friendsprof section .img {
+  display: flex;
+  align-items: center;
+  gap: 4%;
+}
+.friendsprof img {
+  border-radius: 50%;
+}
+
+.profpost {
+  width: 60%;
+}
+.update button {
+  background-color: var(--main-color);
+  font-size: 1.3em;
+  color: var(--lightmode-color);
+  width: 30%;
+  height: 40px;
+}
+
+.update button:hover {
+  box-shadow: 0px 0px 20px var(--main-color);
+}
+
+.update2 form {
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+}
+.update2 {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.image3 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.677);
+}
+
+.modal button {
+  background-color: var(--main-color);
+  font-size: 1.3em;
+  color: var(--lightmode-color);
+  width: 30%;
+  height: 40px;
+  cursor: pointer;
+}
+
+/*loader*/
+.wave-menu {
+  border: 4px solid var(--main-color);
+  border-radius: 50px;
+  width: 30%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: ease 0.2s;
+  position: relative;
+  background: transparent;
+}
+
+.wave-menu li {
+  list-style: none;
+  height: 30px;
+  width: 4px;
+  border-radius: 10px;
+  background: var(--main-color);
+  margin: 0 6px;
+  padding: 0;
+  animation-name: wave1;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: ease 0.2s;
+}
+
+.wave-menu:hover > li {
+  background: rgb(255, 255, 255);
+}
+
+.wave-menu:hover {
+  background: #54dbe5;
+}
+
+.wave-menu li:nth-child(2) {
+  animation-name: wave2;
+  animation-delay: 0.2s;
+}
+
+.wave-menu li:nth-child(3) {
+  animation-name: wave3;
+  animation-delay: 0.23s;
+  animation-duration: 0.4s;
+}
+
+.wave-menu li:nth-child(4) {
+  animation-name: wave4;
+  animation-delay: 0.1s;
+  animation-duration: 0.3s;
+}
+
+.wave-menu li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.wave-menu li:nth-child(6) {
+  animation-name: wave2;
+  animation-duration: 0.5s;
+}
+
+.wave-menu li:nth-child(8) {
+  animation-name: wave4;
+  animation-delay: 0.4s;
+  animation-duration: 0.25s;
+}
+
+.wave-menu li:nth-child(9) {
+  animation-name: wave3;
+  animation-delay: 0.15s;
+}
+
+@keyframes wave1 {
+  from {
+    transform: scaleY(1);
+  }
+
+  to {
+    transform: scaleY(0.5);
+  }
+}
+
+@keyframes wave2 {
+  from {
+    transform: scaleY(0.3);
+  }
+
+  to {
+    transform: scaleY(0.6);
+  }
+}
+
+@keyframes wave3 {
+  from {
+    transform: scaleY(0.6);
+  }
+
+  to {
+    transform: scaleY(0.8);
+  }
+}
+
+@keyframes wave4 {
+  from {
+    transform: scaleY(0.2);
+  }
+
+  to {
+    transform: scaleY(0.5);
+  }
+}
+
+.gridprof2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+.gridprof2 .info {
+  display: grid;
+
+  border: none;
+}
+.headimg img {
+  cursor: pointer;
+}
+.headimg h1 {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .profilep header {
+    width: 90%;
+    padding: 2%;
+  }
+  .updateprof {
+    width: 90%;
+  }
+  .updateprof img {
+    width: 150px;
+    height: 150px;
+  }
+  .gridprof2 h1 {
+    font-size: 1.2em;
+  }
+  .gridprof2 h3 {
+    font-size: 1.2em;
+  }
+  .gridprof2 h2 {
+    font-size: 1.2em;
+  }
+  .gridprof h1 {
+    font-size: 1.2em;
+  }
+  .gridprof h3 {
+    font-size: 1.2em;
+  }
+  .gridprof h2 {
+    font-size: 1.2em;
+  }
+  .friendsprof img {
+    width: 40px;
+    height: 40px;
+  }
+  .friendsprof h3 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profilep h1 {
+    font-size: 0.7em;
+  }
+  .profilep h2 {
+    font-size: 0.7em;
+  }
+  .profilep h3 {
+    font-size: 0.7em;
+  }
+  .profilep p {
+    font-size: 0.7em;
+  }
+  .profilep header {
+    width: 100%;
+  }
+  .profilep header img {
+    width: 50px;
+    height: 50px;
+  }
+  .updateprof {
+    width: 100%;
+  }
+  .updateprof img {
+    width: 100px;
+    height: 100px;
+  }
+  .img img {
+    width: 20px;
+    height: 20px;
+  }
+  .img h3 {
+    font-size: 0.6em;
+  }
+  .img p {
+    font-size: 0.6em;
+  }
+  .profpost {
+    width: 90%;
+  }
+  .profilep #logout {
+    height: 15px;
+    font-size: 0.6em;
+    width: 15%;
+  }
+  .gridprof {
+    display: grid;
+    grid-template-columns: 33% 30% 36%;
+    text-align: center;
+  }
+}

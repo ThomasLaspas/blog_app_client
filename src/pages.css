@@ -1,0 +1,1358 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative:wght@400;700;900&display=swap");
+
+:root {
+  --very-dark-color: #232931;
+  --dark-color: #393e46;
+  --main-color: #4ecca3;
+  --lightmode-color: #eeeeee;
+  --logo-font-family: "Cinzel Decorative", serif;
+  --greytone-color: #8c93a0;
+}
+.loader h1 {
+  color: var(--main-color);
+  font-family: var(--logo-font-family);
+  font-size: 2em;
+  animation: continuousScale 2s infinite alternate;
+}
+.loader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes continuousScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* for login page*/
+.outerlogin {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.login {
+  width: 70%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-color);
+  color: var(--lightmode-color);
+}
+
+.formins {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+}
+.formins h1 {
+  font-family: var(--logo-font-family);
+  color: var(--main-color);
+  font-size: 2em;
+}
+.formins .div1 {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  margin-bottom: 5%;
+}
+
+.formins .div2 {
+  margin-bottom: 10%;
+}
+.formins h4 {
+  text-align: center;
+  color: var(--main-color);
+}
+div p {
+  color: var(--greytone-color);
+}
+
+form span {
+  display: flex;
+  flex-flow: column;
+}
+form label {
+  color: var(--greytone-color);
+}
+
+form input {
+  border-radius: 20px;
+  height: 50px;
+  background-color: var(--dark-color);
+  border: 1px solid var(--lightmode-color);
+  text-align: center;
+  font-size: 1.3em;
+  color: var(--lightmode-color);
+}
+.span {
+  display: block;
+  width: 100%;
+  margin-top: 4%;
+  text-align: end;
+}
+#link {
+  color: var(--main-color);
+  text-decoration: none;
+  margin-top: 10%;
+  text-align: end;
+}
+#link:hover {
+  text-decoration: underline;
+}
+span button {
+  color: var(--lightmode-color);
+  background-color: var(--main-color);
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 2%;
+  font-size: 1.3em;
+}
+
+#p {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.image {
+  background-color: var(--main-color);
+  display: grid;
+  place-items: center;
+  color: var(--lightmode-color);
+  text-align: center;
+}
+.image img {
+  border-radius: 50%;
+}
+
+/* for resetpass page*/
+
+.resetpas {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.resetform {
+  background-color: var(--very-dark-color);
+  color: var(--greytone-color);
+  width: 70%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resetform img {
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  box-shadow: 0 0 7px var(--lightmode-color);
+}
+
+.cardreset {
+  width: 30%;
+}
+.cardreset form {
+  margin-top: 10%;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+.cardreset h1,
+h4 {
+  color: var(--lightmode-color);
+}
+.cardreset form label {
+  font-size: 1.4em;
+}
+.cardreset button {
+  font-size: 1.4em;
+  color: var(--lightmode-color);
+  background-color: var(--main-color);
+  height: 50px;
+  text-align: center;
+}
+.succes {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#success {
+  color: var(--main-color);
+  font-size: 1.4em;
+}
+.succes section p {
+  margin-bottom: 10%;
+}
+
+/* registration page*/
+
+.outerregist {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.regist {
+  width: 70%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/*main page*/
+.alphachat {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+/*main page header*/
+
+.headm {
+  width: 85%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: var(--dark-color);
+}
+
+.mobile {
+  width: 100%;
+  height: 7vh;
+  background-color: var(--dark-color);
+  position: fixed;
+  top: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mobile button {
+  font-size: 1.6em;
+  background-color: transparent;
+  border: none;
+  color: var(--lightmode-color);
+}
+#mobilec {
+  font-size: 1.6em;
+  background-color: transparent;
+  border: none;
+  color: var(--main-color);
+}
+.headimg {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  font-family: var(--logo-font-family);
+  gap: 10px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: -15%;
+}
+.search input {
+  border-radius: 20px 0 0 20px;
+  width: 400px;
+  height: 50px;
+  background-color: var(--dark-color);
+  border: 1px solid var(--lightmode-color);
+  text-align: center;
+  font-size: 1.3em;
+  color: var(--lightmode-color);
+}
+.search button {
+  height: 50px;
+  font-size: 1.3em;
+  background-color: var(--main-color);
+  border-radius: 0 20px 20px 0;
+  border: none;
+  width: 100px;
+}
+#logout {
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  border: 1px solid var(--lightmode-color);
+  background-color: var(--dark-color);
+  color: var(--lightmode-color);
+  font-size: 1.3em;
+  cursor: pointer;
+}
+#logout:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
+}
+.headm section {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+.headm section ul {
+  height: 10vh;
+  width: 400px;
+  background-color: var(--very-dark-color);
+  position: absolute;
+  top: 100%;
+  margin-left: -14%;
+  border-radius: 20px;
+  overflow-x: auto;
+}
+.display {
+  display: none;
+}
+#display {
+  display: none;
+}
+.li {
+  list-style: none;
+  text-align: center;
+  display: block;
+  margin-top: 4%;
+  font-size: 1.1em;
+  color: var(--lightmode-color);
+  cursor: pointer;
+}
+/* main grid*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 24% 47% 24%;
+  gap: 2.5%;
+  width: 85%;
+}
+.grid p {
+  color: var(--greytone-color);
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+.grid1 {
+  min-height: 20vh;
+  background-color: transparent;
+  width: 100%;
+}
+.grid2 {
+  min-height: 10vh;
+  background-color: transparent;
+  width: 100%;
+}
+.grid3 {
+  min-height: 20vh;
+  background-color: transparent;
+  width: 100%;
+}
+.friendreq {
+  width: 100%;
+  height: 35vh;
+  padding-bottom: 4%;
+  padding-top: 9%;
+  padding-left: 6.9%;
+  padding-right: 6.9%;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--dark-color);
+  border-radius: 20px;
+}
+
+.friendreq .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px var(--greytone-color);
+  color: var(--lightmode-color);
+  border-bottom: 1px solid var(--greytone-color);
+}
+.friendsaccept {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+
+.friendreq .title h2 {
+  padding-bottom: 2%;
+}
+.req2 {
+  overflow-x: auto;
+}
+.req2 .img {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.req2 section {
+  display: flex;
+
+  align-items: center;
+  flex-flow: column;
+  margin-top: 5%;
+}
+.req2 img {
+  border-radius: 50%;
+}
+.req2 #one {
+  background-color: var(--main-color);
+  color: var(--lightmode-color);
+  border-radius: 20px;
+  cursor: pointer;
+  height: 28px;
+  font-size: 1em;
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.req2 #two {
+  background-color: transparent;
+  color: var(--lightmode-color);
+  border: 1px solid var(--lightmode-color);
+  border-radius: 20px;
+  cursor: pointer;
+  height: 28px;
+  font-size: 1em;
+  padding: 4%;
+  display: flex;
+  align-items: center;
+}
+.req section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.req img {
+  border-radius: 50%;
+}
+.req #one {
+  background-color: var(--main-color);
+  color: var(--lightmode-color);
+  border-radius: 20px;
+  cursor: pointer;
+  height: 28px;
+  font-size: 1em;
+  padding: 8%;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.req #two {
+  background-color: transparent;
+  color: var(--lightmode-color);
+  border: 1px solid var(--lightmode-color);
+  border-radius: 20px;
+  cursor: pointer;
+  height: 28px;
+  font-size: 1em;
+  padding: 8%;
+  display: flex;
+  align-items: center;
+}
+.req {
+  overflow-x: auto;
+}
+.req .img {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+
+/*suggest component*/
+
+.suggest {
+  width: 100%;
+  height: 35vh;
+  padding-bottom: 4%;
+  padding-top: 9%;
+  padding-left: 6.9%;
+  padding-right: 6.9%;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--dark-color);
+  border-radius: 20px;
+}
+
+.suggest .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px var(--greytone-color);
+  color: var(--lightmode-color);
+  border-bottom: 1px solid var(--greytone-color);
+}
+
+.suggest .title h2 {
+  padding-bottom: 2%;
+}
+.req {
+  overflow-x: auto;
+}
+.req .img {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.req #add {
+  background-color: var(--main-color);
+  color: var(--lightmode-color);
+  border-radius: 20px;
+  cursor: pointer;
+  height: 28px;
+  font-size: 1em;
+  padding: 8%;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+/*profile component*/
+
+.profile {
+  width: 100%;
+  min-height: 35vh;
+  padding-bottom: 4%;
+  padding-top: 9%;
+  padding-left: 6.9%;
+  padding-right: 6.9%;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--dark-color);
+  border-radius: 20px;
+}
+.baiscs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--greytone-color);
+  padding-bottom: 6%;
+}
+.baiscs img {
+  border-radius: 50%;
+}
+.baiscs div {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.baiscs button {
+  color: var(--main-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4em;
+}
+.info {
+  border-bottom: 1px solid var(--greytone-color);
+  padding-bottom: 6%;
+}
+.info2 {
+  padding-bottom: 4%;
+}
+.centered-modal {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.657);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-dialog {
+  position: absolute;
+  background-color: #eeeeee;
+  width: 40%;
+  height: 20vh;
+}
+/* post component*/
+
+.post {
+  width: 100%;
+  min-height: 15vh;
+  padding-bottom: 4%;
+  padding-top: 4%;
+  padding-left: 6.9%;
+  padding-right: 6.9%;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--dark-color);
+  border-radius: 20px;
+}
+.post img {
+  border-radius: 50%;
+}
+.post section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid var(--greytone-color);
+}
+.post section form {
+  width: 100%;
+}
+.post section input {
+  border-radius: 20px;
+  height: 50px;
+  background-color: var(--dark-color);
+  border: 1px solid var(--lightmode-color);
+  text-align: center;
+  font-size: 1.3em;
+  color: var(--lightmode-color);
+  width: 100%;
+}
+
+.postsub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0px solid var(--greytone-color);
+}
+
+.input-div {
+  position: relative;
+  margin-top: 2%;
+  width: 15%;
+  height: 40px;
+  border-radius: 10%;
+  border: 2px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.input-div:hover {
+  box-shadow: 0px 0px 20px var(--main-color);
+}
+
+.icon {
+  color: var(--main-color);
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer !important;
+}
+.postsub button {
+  width: 15%;
+  height: 40px;
+  background-color: #4ecca3;
+  color: var(--lightmode-color);
+  margin-top: 2%;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+/* feed */
+
+.feed {
+  width: 100%;
+  min-height: 25vh;
+  padding-bottom: 4%;
+  padding-top: 4%;
+  padding-left: 6.9%;
+  padding-right: 6.9%;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--dark-color);
+  border-radius: 20px;
+  margin-top: 4%;
+}
+.feed #log {
+  border-radius: 50%;
+}
+.feed main div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#feedimg {
+  width: 100%;
+}
+#headpost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#headpost img {
+  cursor: pointer;
+}
+#headpost p {
+  cursor: pointer;
+}
+#headpost h1 {
+  cursor: pointer;
+}
+#likes {
+  margin-top: 3%;
+  padding-top: 3%;
+  border-top: 1px solid var(--greytone-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#likes p {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+#comments {
+  width: 100%;
+  height: 25vh;
+  padding-bottom: 4%;
+  overflow-x: auto;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--dark-color);
+  border-radius: 20px;
+}
+
+.comments {
+  width: 100%;
+  flex-flow: column;
+  margin-top: 4%;
+}
+
+.comments p {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.addcomment {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4%;
+}
+.addcomment form {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+
+#addcomment {
+  width: 100%;
+  text-wrap: wrap;
+
+  height: 30px;
+}
+#addcommentsub {
+  width: 20%;
+  text-wrap: wrap;
+  font-size: 1em;
+  height: 30px;
+}
+
+.commenttocomment {
+  width: 100%;
+
+  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-left: 6.9%;
+  padding-right: 6.9%;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--dark-color);
+}
+
+#addcommentoncomment {
+  width: 80%;
+  text-wrap: wrap;
+
+  height: 30px;
+}
+#addcommentsuboncomment {
+  width: 20%;
+  text-wrap: wrap;
+  font-size: 1em;
+  height: 30px;
+}
+.commenttocomment form {
+  width: 80%;
+}
+
+.divcom {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.reply {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.reply h3 {
+  width: 100%;
+}
+
+#likesc {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+/*for small screens and laptops*/
+
+@media screen and (max-width: 1500px) {
+  form input {
+    height: 40px;
+  }
+  .div1 img {
+    height: 80px;
+    width: 80px;
+  }
+  .form {
+    padding: 2%;
+  }
+  .baiscs div {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+  .baiscs h1 {
+    font-size: 1em;
+  }
+  .baiscs p {
+    font-size: 1em;
+  }
+  .info p {
+    font-size: 1.1em;
+  }
+  .info2 h2 {
+    font-size: 1.2em;
+  }
+  .info2 h3 {
+    font-size: 1.2em;
+  }
+  .info2 p {
+    font-size: 1.1em;
+  }
+  .post img {
+    width: 80px;
+    height: 80px;
+  }
+  .post section input {
+    height: 40px;
+  }
+  .img h3 {
+    font-size: 1em;
+  }
+  .img p {
+    font-size: 1em;
+  }
+  .req #add {
+    font-size: 0.7em;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img img {
+    width: 40px;
+    height: 40px;
+  }
+  .headimg h1 {
+    font-size: 1.3em;
+  }
+  .search {
+    margin-left: -11%;
+  }
+  .search input {
+    height: 40px;
+    font-size: 1.1em;
+  }
+  .search button {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .image h3 {
+    font-size: 1em;
+  }
+  .div1 img {
+    width: 60px;
+    height: 60px;
+  }
+  .div1 h1 {
+    font-size: 1.1em;
+  }
+  .cardreset {
+    width: 70%;
+  }
+  form input {
+    height: 40px;
+    font-size: 1em;
+  }
+  .headimg img {
+    width: 60px;
+    height: 60px;
+  }
+  .headimg h1 {
+    font-size: 1em;
+  }
+  .search input {
+    width: 70%;
+    height: 35px;
+  }
+  .search button {
+    width: 25%;
+    height: 35px;
+    font-size: 1em;
+  }
+  .headm section ul {
+    height: 8vh;
+    width: 82%;
+    font-size: 0.7em;
+  }
+  .headm button {
+    font-size: 1em;
+  }
+  #logout {
+    height: 35px;
+    width: 100px;
+
+    font-size: 1.2em;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+
+    width: 90%;
+  }
+  .mobile {
+    width: 90%;
+  }
+  .friendreq {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 4%;
+  }
+  .headm {
+    width: 90%;
+    padding: 2%;
+  }
+  .profile {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5%;
+  }
+  .feed {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .suggest {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 4%;
+  }
+  .req #add {
+    height: 10px;
+    font-size: 1.2em;
+    padding: 4%;
+  }
+  .req p {
+    text-wrap: nowrap;
+  }
+  .req h3 {
+    font-size: 1.2em;
+  }
+  .req img {
+    width: 80px;
+    height: 80px;
+  }
+  .req2 img {
+    width: 80px;
+    height: 80px;
+  }
+  .req2 h5 {
+    font-size: 1.2em;
+  }
+  .req2 section {
+    display: flex;
+    align-items: center;
+    gap: 33%;
+    flex-flow: nowrap;
+    width: 100%;
+  }
+  #friendsaccept {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    gap: 10%;
+  }
+  .req2 #one {
+    width: 50%;
+    height: 30px;
+    font-size: 1.2em;
+    padding: 8%;
+  }
+  .req2 #two {
+    width: 50%;
+    height: 30px;
+    font-size: 1.2em;
+    padding: 8%;
+  }
+  .post {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login {
+    width: 80%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 100%;
+    padding-bottom: 20%;
+  }
+  .outerlogin {
+    margin-bottom: 50%;
+  }
+  .outerlogin p {
+    font-size: 0.88em;
+  }
+  .outerlogin h3 {
+    font-size: 0.88em;
+  }
+  .headm {
+    width: 100%;
+    height: 10vh;
+  }
+  .headm img {
+    width: 35px;
+    height: 35px;
+  }
+  .headm h1 {
+    font-size: 0.6em;
+  }
+  .mobile {
+    width: 100%;
+  }
+  .search input {
+    height: 15px;
+    font-size: 0.6em;
+  }
+  .search button {
+    height: 15px;
+    font-size: 0.6em;
+  }
+  .headm #logout {
+    height: 15px;
+    font-size: 0.6em;
+    width: 15%;
+  }
+  .post {
+    padding-left: 6.9%;
+    padding-right: 6.9%;
+    min-height: 10vh;
+  }
+  .post section {
+    gap: 5%;
+  }
+  .post img {
+    width: 30px;
+    height: 30px;
+  }
+  .post form input {
+    height: 15px;
+    font-size: 0.6em;
+    width: 80%;
+  }
+  .input-div {
+    margin-top: 6%;
+    width: 15%;
+    height: 20px;
+    font-size: 0.6em;
+  }
+  .postsub button {
+    font-size: 0.6em;
+    height: 20px;
+    margin-top: 6%;
+    padding-bottom: 2%;
+  }
+  .mobile {
+    height: 5vh;
+    top: 95%;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .grid2 {
+    padding-bottom: 15%;
+  }
+  .feed {
+    padding-left: 6.9%;
+    padding-right: 6.9%;
+    min-height: 10vh;
+  }
+  #headpost img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #headpost h1 {
+    font-size: 0.6em;
+  }
+  #headpost h4 {
+    font-size: 0.6em;
+  }
+  .feed p {
+    font-size: 0.6em;
+  }
+  #likes {
+    width: 100%;
+  }
+  #likes #comment1 {
+    text-align: center;
+    margin-left: 40%;
+  }
+  .addcomment img {
+    width: 30px;
+    height: 30px;
+  }
+  #addcomment {
+    height: 15px;
+    font-size: 0.5em;
+  }
+  #addcommentsub {
+    width: 20%;
+    text-wrap: wrap;
+    font-size: 0.5em;
+    height: 15px;
+  }
+  .comments img {
+    width: 30px;
+    height: 30px;
+  }
+  .comments h4 {
+    font-size: 0.6em;
+  }
+  .comments h2 {
+    font-size: 0.6em;
+  }
+  #h2com {
+    font-size: 0.6em;
+    margin-top: 10%;
+  }
+  #likesc {
+    font-size: 0.6em;
+  }
+  .commenttocomment h1 {
+    font-size: 0.6em;
+  }
+  .commenttocomment h3 {
+    font-size: 0.6em;
+  }
+  .commenttocomment h2 {
+    font-size: 0.6em;
+  }
+  .commenttocomment h4 {
+    font-size: 0.6em;
+  }
+  .commenttocomment img {
+    width: 30px;
+    height: 30px;
+  }
+  #addcommentoncomment {
+    height: 15px;
+    font-size: 0.5em;
+    width: 70%;
+  }
+  #addcommentsuboncomment {
+    height: 15px;
+    font-size: 0.5em;
+  }
+  .divcom h2 {
+    font-size: 0.6em;
+  }
+  .profile h1 {
+    font-size: 0.88em;
+  }
+  .profile h3 {
+    font-size: 0.88em;
+  }
+  .profile h4 {
+    font-size: 0.88em;
+  }
+  .profile h2 {
+    font-size: 0.88em;
+  }
+  .profile p {
+    font-size: 0.88em;
+  }
+  .friendreq h1 {
+    font-size: 0.88em;
+  }
+  .friendreq h2 {
+    font-size: 0.88em;
+  }
+  .friendreq h3 {
+    font-size: 0.88em;
+  }
+  .friendreq h5 {
+    font-size: 0.88em;
+  }
+  .friendreq p {
+    font-size: 0.88em;
+  }
+  .req2 img {
+    width: 35px;
+    height: 35px;
+  }
+  .req2 #one {
+    width: 50%;
+    height: 25px;
+    font-size: 0.88em;
+    padding: 6%;
+  }
+  .req2 #two {
+    width: 50%;
+    height: 25px;
+    font-size: 0.88em;
+    padding: 6%;
+  }
+  .suggest h1 {
+    font-size: 0.88em;
+  }
+  .suggest h3 {
+    font-size: 0.88em;
+  }
+  .suggest h2 {
+    font-size: 0.88em;
+  }
+  .req p {
+    font-size: 0.88em;
+    text-wrap: nowrap;
+  }
+  .req h3 {
+    font-size: 0.88em;
+  }
+  .req img {
+    width: 35px;
+    height: 35px;
+  }
+  .req #add {
+    height: 8px;
+    font-size: 0.88em;
+    padding: 4%;
+  }
+  .loader h1 {
+    font-size: 1.2em;
+  }
+  .formins form input {
+    height: 25px;
+
+    font-size: 0.9em;
+    color: var(--lightmode-color);
+  }
+  .formins form label {
+    font-size: 0.8em;
+  }
+
+  span button {
+    height: 25px;
+
+    font-size: 0.9em;
+  }
+  #link {
+    font-size: 0.88em;
+  }
+  .outerlogin {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .login .image {
+    padding: 4%;
+  }
+  .formins .div1 {
+    gap: 13%;
+    margin-bottom: 7%;
+  }
+  .resetform img {
+    width: 70px;
+    height: 70px;
+    top: 0%;
+  }
+  .resetform h1 {
+    font-size: 0.88em;
+  }
+  .resetform p {
+    font-size: 0.88em;
+  }
+  .resetform h4 {
+    font-size: 0.88em;
+  }
+  .cardreset {
+    width: 90%;
+  }
+  .cardreset form {
+    margin-top: 10%;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 25px;
+    font-size: 0.9em;
+  }
+
+  .cardreset form label {
+    font-size: 0.9em;
+  }
+  .cardreset button {
+    font-size: 0.9em;
+    height: 25px;
+  }
+  .regist {
+    width: 90%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .regist .image {
+    display: none;
+  }
+}

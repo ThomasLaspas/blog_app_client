@@ -1,0 +1,19 @@
+:root {
+  --very-dark-color: #232931;
+  --dark-color: #393e46;
+  --main-color: #4ecca3;
+  --lightmode-color: #eeeeee;
+  --darkmode-color: #181818;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--lightmode-color);
+  background-color: var(--darkmode-color);
+}
