@@ -1141,13 +1141,13 @@ h4 {
   }
 
   #headpost h1 {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   #headpost h4 {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   .feed p {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   #likes {
     width: 100%;
@@ -1175,17 +1175,17 @@ h4 {
     height: 30px;
   }
   .comments h4 {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   .comments h2 {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   #h2com {
-    font-size: 0.6em;
+    font-size: 0.7em;
     margin-top: 10%;
   }
   #likesc {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   .commenttocomment h1 {
     font-size: 0.6em;
