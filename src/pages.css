@@ -1130,6 +1130,9 @@ h4 {
   .grid2 {
     padding-bottom: 15%;
   }
+  #feedimg img {
+    height: 250px;
+  }
   .feed {
     padding-left: 6.9%;
     padding-right: 6.9%;
