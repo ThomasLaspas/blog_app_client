@@ -4,7 +4,8 @@ export async function requireAuth() {
   const storedData = localStorage.getItem("key");
   //const navigate = useNavigate();
   if (!storedData) {
-    window.location.href = "/?message=You must log in first.";
+    window.location.href =
+      "https://blog-app-alpha.netlify.app/?message=You must log in first.";
   }
   return null;
 }
